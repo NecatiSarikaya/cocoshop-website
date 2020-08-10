@@ -125,10 +125,16 @@
         flex-basis: 20%;
         padding: 10px;
         min-width: 200px;
-        margin-bottom: 50px; }
+        margin-bottom: 50px;
+        transition: transform .4s ease;
+        cursor: pointer; }
         .categories .small-container .row .col-4 img {
-          width: 100%; }
+          width: 100%;
+          height: 266.6px; }
         .categories .small-container .row .col-4 .rating .fa {
           color: #00c4f5; }
+        .categories .small-container .row .col-4:hover {
+          transform: translateY(-10px);
+          -moz-transform: translateY(-10px); }
 
 /*# sourceMappingURL=styles.css.map */

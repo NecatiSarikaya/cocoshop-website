@@ -148,13 +148,20 @@
                 padding: 10px;
                 min-width: 200px;
                 margin-bottom: 50px;
+                transition: transform .4s ease;
+                cursor: pointer;
                 img {
                     width: 100%;
+                    height: 266.6px;
                 }
                 .rating {
                     .fa {
                         color: #00c4f5;
                     }
+                }
+                &:hover {
+                    transform: translateY(-10px);
+                    -moz-transform: translateY(-10px);
                 }
             }
         }
