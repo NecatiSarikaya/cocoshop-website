@@ -171,7 +171,7 @@
 }
 
 .offer {
-    background-image: linear-gradient(rgba(250, 162, 213, 0.7), rgb(255, 255, 255));
+    background-image: linear-gradient(rgba(255, 189, 227, 0.7), rgba(255, 166, 65, 0.7));
     border-radius: 25px;
     .offer-container {
         width: 100%;
@@ -196,11 +196,11 @@
                     line-height: 60px;
                     font-weight: 600;
                     margin: 25px 0;
-                    color: #000;
+                    color: #555;
                 }
                 p {
                     font-size: 18px;
-                    color: rgb(70, 69, 69);
+                    color: #777;
                 }
                 img {
                     max-width: 100%;
@@ -263,6 +263,62 @@
         padding: 10px;
         .fa {
             color: rgb(248, 41, 162);
+        }
+    }
+}
+
+.brands {
+    margin: 100px auto;
+    .col-5 {
+        width: 160px;
+        img {
+            width: 100%;
+            cursor: pointer;
+            filter: grayscale(100);
+            &:hover {
+                filter: grayscale(0);
+            }
+        }
+    }
+}
+
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    .container {
+        max-width: 1300px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        p {
+            color: #8a8a8a;
+        }
+        h3 {
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .footer-col-1,
+        .footer-col-2,
+        .footer-col-3,
+        .footer-col-4 {
+            min-width: 250px;
+        }
+        .footer-col-1 {
+            flex-basis: 30%;
+        }
+        .footer-col-2 {
+            float: 1;
+            text-align: center;
+            img {
+                width: 180px;
+                margin-bottom: 20px;
+            }
+        }
+        .footer-col-3,
+        .footer-col-4 {
+            flex-basis: 12%;
+            text-align: center;
         }
     }
 }
