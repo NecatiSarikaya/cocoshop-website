@@ -1,6 +1,6 @@
 @import url(_reset.css);
 .main-container {
-  background-image: linear-gradient(#d900ff, #00eaff);
+  background-image: linear-gradient(#f829a2, white);
   height: 100%;
   width: 100%; }
   .main-container .container {
@@ -64,7 +64,7 @@
       .main-container .container .row .btn {
         display: inline-block;
         background: #a851fa;
-        color: #FFF;
+        color: #fff;
         padding: 12px 50px;
         margin: 30px 0;
         border-radius: 30px;
@@ -82,80 +82,139 @@
 .categories {
   max-width: 1400px;
   margin: 50px auto; }
-  .categories .small-container {
-    max-width: 1080px;
+
+.small-container {
+  max-width: 1080px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .small-container .title {
+    text-align: center;
+    margin: 0 auto 60px;
+    position: relative;
+    line-height: 60px;
+    color: #555; }
+    .small-container .title::after {
+      content: "";
+      background: #00c4f5;
+      width: 80px;
+      height: 5px;
+      border-radius: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%); }
+  .small-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px; }
+    .small-container .row .col-3 {
+      margin: 15px;
+      flex-basis: 30%;
+      margin-bottom: 30px;
+      min-width: 250px; }
+      .small-container .row .col-3 h2 {
+        text-align: center;
+        padding-top: 15px; }
+      .small-container .row .col-3 .content-img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px; }
+    .small-container .row .col-4 {
+      flex-basis: 20%;
+      padding: 10px;
+      min-width: 200px;
+      margin-bottom: 50px;
+      transition: transform 0.4s ease;
+      cursor: pointer; }
+      .small-container .row .col-4 img {
+        width: 100%;
+        height: 266.6px; }
+      .small-container .row .col-4 .rating .fa {
+        color: #f829a2; }
+      .small-container .row .col-4:hover {
+        transform: translateY(-10px);
+        -moz-transform: translateY(-10px); }
+
+.offer {
+  background-image: linear-gradient(rgba(250, 162, 213, 0.7), white);
+  border-radius: 25px; }
+  .offer .offer-container {
+    width: 100%;
     margin: auto;
     padding-left: 20px;
     padding-right: 20px; }
-    .categories .small-container .title {
-      text-align: center;
-      margin: 0 auto 60px;
-      position: relative;
-      line-height: 60px;
-      color: #555; }
-      .categories .small-container .title::after {
-        content: '';
-        background: #00c4f5;
-        width: 80px;
-        height: 5px;
-        border-radius: 5px;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%); }
-    .categories .small-container .row {
+    .offer .offer-container .row {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       margin: auto;
       padding-left: 25px;
       padding-right: 25px; }
-      .categories .small-container .row .offer-col {
+      .offer .offer-container .row .offer-col {
         padding-top: 15%; }
-      .categories .small-container .row .col-2-o {
+      .offer .offer-container .row .col-2 {
         flex-basis: 50%;
-        min-width: 300px; }
-        .categories .small-container .row .col-2-o h1 {
+        min-width: 50%; }
+        .offer .offer-container .row .col-2 h1 {
           font-size: 48px;
           line-height: 60px;
           font-weight: 600;
           margin: 25px 0;
           color: #000; }
-        .categories .small-container .row .col-2-o p {
+        .offer .offer-container .row .col-2 p {
           font-size: 18px;
           color: #464545; }
-        .categories .small-container .row .col-2-o img {
+        .offer .offer-container .row .col-2 img {
           max-width: 100%;
           padding: 40px 0; }
-      .categories .small-container .row .col-3 {
-        margin: 15px;
-        flex-basis: 30%;
-        margin-bottom: 30px;
-        min-width: 250px; }
-        .categories .small-container .row .col-3 h2 {
-          text-align: center;
-          padding-top: 15px; }
-        .categories .small-container .row .col-3 img {
-          width: 100%;
-          height: 100%;
-          border-radius: 5px; }
-      .categories .small-container .row .col-4 {
-        flex-basis: 20%;
-        padding: 10px;
-        min-width: 200px;
-        margin-bottom: 50px;
-        transition: transform .4s ease;
-        cursor: pointer; }
-        .categories .small-container .row .col-4 img {
-          width: 100%;
-          height: 266.6px; }
-        .categories .small-container .row .col-4 .rating .fa {
-          color: #00c4f5; }
-        .categories .small-container .row .col-4:hover {
-          transform: translateY(-10px);
-          -moz-transform: translateY(-10px); }
+        .offer .offer-container .row .col-2 .btn {
+          display: inline-block;
+          background: #a851fa;
+          color: #fff;
+          padding: 12px 50px;
+          margin: 30px 0;
+          border-radius: 30px;
+          transition: background-color 0.4s;
+          transition: box-shadow 0.3s ease; }
+          .offer .offer-container .row .col-2 .btn:hover {
+            background-color: #fff;
+            color: #000;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75); }
 
-.offer {
-  background-image: radial-gradient(#eeb5f8, white); }
+.ref {
+  padding-top: 100px; }
+  .ref .quote {
+    margin-top: 10px;
+    font-size: 32px;
+    color: #f829a2; }
+  .ref .col-3 {
+    text-align: center;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s; }
+    .ref .col-3 img {
+      width: 100px;
+      margin-top: 20px;
+      border-radius: 50%; }
+    .ref .col-3:hover {
+      transform: translateY(-10px); }
+  .ref h3 {
+    font-size: 20px;
+    font-weight: bold; }
+  .ref p {
+    font-size: 14px;
+    color: #777;
+    padding: 10px;
+    letter-spacing: 1px; }
+  .ref .rating {
+    padding: 10px; }
+    .ref .rating .fa {
+      color: #f829a2; }
 
 /*# sourceMappingURL=styles.css.map */
