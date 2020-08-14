@@ -283,42 +283,64 @@
 }
 
 .footer {
-    background: #000;
+    background-image: linear-gradient( rgb(32, 32, 32), rgb(63, 63, 63));
     color: #8a8a8a;
     font-size: 14px;
-    .container {
-        max-width: 1300px;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-        p {
-            color: #8a8a8a;
+    p {
+        color: #999999;
+    }
+    h3 {
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    .f-col-4 {
+        flex-basis: 20%;
+        padding: 10px;
+        min-width: 200px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        .store {
+            margin-top: 25px;
+            height: 40px;
+            width: 100px;
         }
-        h3 {
-            color: #fff;
+        .footer-logo {
             margin-bottom: 20px;
         }
-        .footer-col-1,
-        .footer-col-2,
-        .footer-col-3,
-        .footer-col-4 {
-            min-width: 250px;
-        }
-        .footer-col-1 {
-            flex-basis: 30%;
-        }
-        .footer-col-2 {
-            float: 1;
-            text-align: center;
-            img {
-                width: 180px;
-                margin-bottom: 20px;
+    }
+    .copyright {
+        text-align: center;
+    }
+}
+
+.menu-icon {
+    width: 28px;
+    padding-left: 20px;
+    display: none;
+}
+
+
+/*mediaQ*/
+
+@media only screen and (max-width:800px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+    nav {
+        ul {
+            position: absolute;
+            top: 70;
+            left: 0;
+            background: #333;
+            width: 100%;
+            overflow: hidden;
+            li {
+                display: block;
+                margin-right: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
-        }
-        .footer-col-3,
-        .footer-col-4 {
-            flex-basis: 12%;
-            text-align: center;
         }
     }
 }
